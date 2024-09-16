@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petpicls</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="/static/png-clipart-paw-dog-computer-icons-dog-animals-logo-thumbnail__1_-removebg-preview.png">
+</head>
+<body>
+    <br>
+    
+
+    <div class="logo">
+        <img src="/static/png-clipart-paw-dog-computer-icons-dog-animals-logo-thumbnail__1_-removebg-preview.png">
+        <h1 class="logo">PetPicks</h1>
+    </div>
+
+    <form id="upload-form">
+        <div id="upload-btn-wrapper">
+            <input type="file" name="file" id="input-file" accept="image/" required>
+            <label for="input-file">Choose a file</label>
+        </div>
+        <button type="submit">Classify</button>
+    </form>
+
+
+    <div id="image-container" ></div>
+        <img id="selected-image" src="" alt="Selected Image" >
+    </div>
+
+
+
+    <div id="result-container"></div>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+</html>
