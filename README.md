@@ -3,6 +3,7 @@ PetPicks is a Flask-based web application that classifies images of pets as eith
 
 ## Technologies
 Frontend : javascript , html & css used for building user interface
+
 Backend : Flask a web framework for building the application & teacheable machine which provides the pre-trained model for classification
 
 ##  Features
